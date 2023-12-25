@@ -1,0 +1,9 @@
+solr:
+  url: 'http://localhost:8983/solr/argo3_prod'
+
+elasticsearch:
+  host: 'https://localhost:9200'
+  username: elastic
+  password: changeme
+  ca_file: 'tmp/ca.crt'
+  index: 'argo'

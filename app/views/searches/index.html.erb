@@ -1,0 +1,10 @@
+<%= turbo_stream_from(@search, channel: SearchChannel, data: {id: @search.id}) %>
+<div id="search-remove">
+</div>
+<%= render partial: 'form', locals: { search: @search }%>
+<div id="search-results">
+</div>
+<% @search.facet_attribute_keys.each do |facet_key|%>
+  <div id="<%= facet_dom_id(facet_key) %>">  
+  </div>
+<% end %>

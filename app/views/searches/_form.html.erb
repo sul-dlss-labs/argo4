@@ -1,0 +1,6 @@
+<turbo-frame id="search-form">
+  <%= form_with model: search, html: {autocomplete: 'off'} do |form| %>
+    <%= form.text_field :query, value: '', autocomplete: 'off' %>
+    <%= form.submit "Search" %>
+  <% end %>
+</turbo-frame>

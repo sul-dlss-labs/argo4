@@ -1,0 +1,8 @@
+<ul>
+  <% item_results.each do |item_result| %>
+    <li>
+      <%= link_to item_result.title, view_path(item_result.druid) %>
+    </li>
+  <% end %>
+</ul>
+<%= render PaginationComponent.new(result:, search:)%>

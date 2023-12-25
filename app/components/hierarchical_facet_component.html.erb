@@ -1,0 +1,8 @@
+<%= label %>
+<ul>
+  <% facet.values.each do |facet_value| %>
+    <li style="<%= value_style(facet_value.value) %>">
+      <%= render FacetButtonComponent.new(facet_key: facet.key, facet_value: facet_value, search: search) %>
+    </li>
+  <% end %>
+</ul>
